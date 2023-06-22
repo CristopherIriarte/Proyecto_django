@@ -1,0 +1,22 @@
+{% extends 'juegos/base.html' %}
+
+{% block content %}
+<title>Lista de Videojuegos</title>
+
+<h1>Lista de Videojuegos</h1>
+    <ul>
+    {% for videojuego in videojuegos %}
+        <li>{{ videojuego.titulo }} - {{ videojuego.consola }} ({{ videojuego.precio }})</li>
+    {% empty %}
+        <li>No hay videojuegos disponibles.</li>
+    {% endfor %}
+    </ul>
+{% endblock %}
+
+<html>
+<head>
+</head>
+<body>
+    
+</body>
+</html>

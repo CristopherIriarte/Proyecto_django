@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Venta de Videojuegos</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="{% url 'lista_videojuegos' %}">Lista de Videojuegos</a></li>
+      <li><a href="{% url 'crear_videojuego' %}">Agregar Videojuego</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    {% block content %}
+    {% endblock %}
+  </main>
+</body>
+</html>
